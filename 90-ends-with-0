@@ -1,6 +1,6 @@
 public Boolean isEndWithZero(Integer num){
      //code here
-     Integer remainder = num / 5; 
+     Integer remainder = num % 10; 
 
      if(remainder == 0){
          return true;
