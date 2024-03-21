@@ -10,7 +10,7 @@ insert record ;
 
 
 
-NewRecord = [SELECT apxio__Registration_Number__c  FROM apxio__Student__c  WHERE Id = : record.Id ]
+newRecord = [SELECT apxio__Registration_Number__c  FROM apxio__Student__c  WHERE Id = : record.Id ]
 
- return NewRecord.apxio__Registration_Number__c ;
+ return newRecord.apxio__Registration_Number__c ;
 }
