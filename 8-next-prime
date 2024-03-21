@@ -1,10 +1,10 @@
 public Integer nextPrime(Integer num) {
     //code here
-     if(num < 2){
-         return 2;
-     }
+    if(num < 2){
+        return 2;
+    }
 
-     Integer next = num + 1 ;
+    Integer next = num + 1 ;
     
     // Keep checking each number greater than num
     while (!isPrime(next)) {
@@ -23,6 +23,7 @@ public Boolean isPrime(Integer next) {
             // If it's divisible, it's not prime
             return false;
         }
+    }
     // If it's not divisible by any number, it's prime
     return true;
 }
