@@ -1,11 +1,10 @@
 public String formatName(String firstName, String lastName) {
     //code here
 
-    if( lastName = ''){
-         
+    if( lastName = ''){ 
         return firstName;
     }else{
-    String formattedName = lastName + ',' + firstName
+         formattedName = lastName + ',' + firstName
        return formattedName;
     }
     
