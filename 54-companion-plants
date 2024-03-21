@@ -9,6 +9,6 @@ public Boolean companionPlants(String plant1, String plant2) {
        plant2.equals('lettuce') && plant1.equals('onions')||
        plant2.equals('onions') && plant1.equals('carrots')||
        plant2.equals('onions') && plant1.equals('tomatoes'))) {
-           return false;
+           return true;
        }
 }
