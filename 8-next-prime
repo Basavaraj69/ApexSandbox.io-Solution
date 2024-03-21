@@ -1,0 +1,35 @@
+public Integer nextPrime(Integer num) {
+    //code here
+    
+    // Start checking from num + 1
+    Integer next = num + 1;
+    
+    // Keep checking each number greater than num
+    while (true) {
+        // Check if the current number is prime
+        if (isPrime(next)) {
+            // If it's prime, return it
+            return next;
+        }
+        // Move to the next number
+        next++;
+    }
+}
+
+// Helper function to check if a number is prime
+public Boolean isPrime(Integer num) {
+    // Base case: 2 is the smallest prime number
+    if (num == 2) {
+        return true;
+    }
+    // Check if the number is divisible by any number from 2 to sqrt(num)
+    for (Integer i = 2; i <num; i++) {
+        if (Math.mod(num, i) == 0) {
+            // If it's divisible, it's not prime
+            return false;
+        }
+    }
+    // If it's not divisible by any number, it's prime
+    return true;
+    }
+}
