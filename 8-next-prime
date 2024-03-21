@@ -4,7 +4,7 @@ public Integer nextPrime(Integer num) {
          return 2;
      }
 
-     Integer next = num + 1
+     Integer next = num + 1 ;
     
     // Keep checking each number greater than num
     while (!isPrime(next)) {
