@@ -1,10 +1,10 @@
 public Boolean isLeapYear(Integer year) {
     //code here
-      Integer Year = Math.mod(year, 4);
-    Integer Year1 = Math.mod(year, 100);
-    Integer Year2 = Math.mod(year, 400);
+      Integer ear = Math.mod(year, 4);
+    Integer ear1 = Math.mod(year, 100);
+    Integer ear2 = Math.mod(year, 400);
 
-    if (Year == 0 && (Year1 != 0 || Year2 == 0)) {
+    if (ear == 0 && (ear1 != 0 || ear2 == 0)) {
         return true;
     } else {
         return false;
