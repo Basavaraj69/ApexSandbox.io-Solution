@@ -26,3 +26,4 @@ public Boolean isPrime(Integer next) {
     // If it's not divisible by any number, it's prime
     return true;
 }
+}
