@@ -1,29 +1,28 @@
 public Integer nextPrime(Integer num) {
     //code here
-     if(num < 2){
-         return 2;
-     }
-
-     Integer next = num + 1 ;
-    
-    // Keep checking each number greater than num
-    while (!isPrime(next)) {
-           next++;
+ if (num < 2) {
+        return 2;
     }
 
-     return next; 
+    Integer next = num + 1; // Added a semicolon here
+
+    // Keep checking each number greater than num
+    while (!isPrime(next)) {
+        next++;
+    }
+
+    return next; 
 }
 
 // Helper function to check if a number is prime
 public Boolean isPrime(Integer next) {
-  
-    // Check if the number is divisible by any number from 2 to sqrt(num)
+    // Check if the number is divisible by any number from 2 to sqrt(next)
     for (Integer i = 2; i < next; i++) {
         if (Math.mod(next, i) == 0) {
             // If it's divisible, it's not prime
             return false;
         }
+    }
     // If it's not divisible by any number, it's prime
     return true;
-}
 }
