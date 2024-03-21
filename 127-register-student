@@ -8,10 +8,9 @@ record.apxio__Email__c = email;
 
 insert record ;
 
-if(record.Id){
-    String recordId = record.Id;
+
 
 return [SELECT apxio__Registration_Number__c  FROM apxio__Student__c  WHERE Id = : recordId ]
-}
+
 
 }
