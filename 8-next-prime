@@ -17,10 +17,7 @@ public Integer nextPrime(Integer num) {
 
 // Helper function to check if a number is prime
 public Boolean isPrime(Integer num) {
-    // Base case: 2 is the smallest prime number
-    if (num <= 1) {
-        return false;
-    }
+    
     // Check if the number is divisible by any number from 2 to sqrt(num)
     for (Integer i = 2; i < num; i++) {
         if (Math.mod(num, i) == 0) {
