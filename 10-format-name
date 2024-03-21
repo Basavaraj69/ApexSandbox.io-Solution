@@ -4,8 +4,8 @@ public String formatName(String firstName, String lastName) {
     if( lastName == ''){
         return firstName;
     }else{
-      formattedName = lastName + ', ' + firstName
-       return formattedName;
+      return lastName + ', ' + firstName
+        
     }
     
 }
