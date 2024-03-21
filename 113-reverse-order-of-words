@@ -21,25 +21,4 @@ private String reverseString(String input) {
     characters.reverse();
     return String.join(characters, '');
 }
-public String reverseWordsInASentence(String sentence) {
-    // Reverse the entire sentence
-    String reversedSentence = reverseString(sentence);
-    
-    // Split the reversed sentence into individual words
-    List<String> words = reversedSentence.split(' ');
-    
-    // Reverse the order of the words
-    words.reverse();
-    
-    // Join the reversed words into a single string
-    String reversedWordsSentence = String.join(words, ' ');
-    
-    return reversedWordsSentence.trim(); // Remove leading and trailing spaces
-}
 
-// Helper function to reverse a string
-private String reverseString(String input) {
-    List<String> characters = input.split('');
-    characters.reverse();
-    return String.join(characters, '');
-}
