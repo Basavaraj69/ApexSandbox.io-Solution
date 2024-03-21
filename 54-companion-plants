@@ -1,6 +1,6 @@
 public Boolean companionPlants(String plant1, String plant2) {
     //code here
-    Set<String> companions = new Set<String>{'lettuce-cucumbers', 'onions-lettuce', 'onions-carrots', 'onions-tomatoes'};
+    Set<String> companions = new Set<String>{'lettuce-cucumbers', 'lettuce-onions', 'onions-carrots', 'onions-tomatoes'};
 
     String pair = plant1 + '-' + plant2;
 
