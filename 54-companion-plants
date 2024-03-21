@@ -1,0 +1,10 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    //code here
+    if(plant1.equals('lettuce') && plant2.equals('cucumber') ||
+       plant1.equals('lettuce') && plant2.equals('onions')||
+       plant1.equals('onions') && plant2.equals('tomatoes')){
+           return true;
+       }else{
+           return false;
+       }
+}
