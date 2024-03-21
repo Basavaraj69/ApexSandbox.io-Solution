@@ -22,8 +22,8 @@ public Boolean isPrime(Integer num) {
         return false;
     }
     // Check if the number is divisible by any number from 2 to sqrt(num)
-    for (Integer i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i == 0) {
+    for (Integer i = 2; i < num; i++) {
+        if (Math.mod(num, i) == 0) {
             // If it's divisible, it's not prime
             return false;
         }
