@@ -12,6 +12,6 @@ public void createCourseAndClass(String name, String description) {
     apxio__Class__c  newClassRecord = apxio__Class__c;
     newClassRecord.Name = name;
     newClassRecord.apxio__Description__c = truncatedDescription;
-
+    newClassRecord.apxio__Course__c = newCourse.Id;
     insert newClassRecord ;
 }
