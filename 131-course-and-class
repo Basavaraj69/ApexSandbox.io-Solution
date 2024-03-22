@@ -1,7 +1,7 @@
 public void createCourseAndClass(String name, String description) {
     // code here
 
-    apxio__Course__c  newCourse = apxio__Course__c ();
+    apxio__Course__c  newCourse = new apxio__Course__c ();
     newCourse.Name = name ;
     newCourse.apxio__Course_Details__c = description;
 
@@ -9,9 +9,10 @@ public void createCourseAndClass(String name, String description) {
 
     String truncatedDescription = description != null ? description.left(255) : '';
 
-    apxio__Class__c  newClassRecord = apxio__Class__c;
+    apxio__Class__c  newClassRecord = new  apxio__Class__c();
     newClassRecord.Name = name;
     newClassRecord.apxio__Description__c = truncatedDescription;
     newClassRecord.apxio__Course__c = newCourse.Id;
+
     insert newClassRecord ;
 }
