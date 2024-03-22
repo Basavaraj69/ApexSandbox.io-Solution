@@ -1,9 +1,9 @@
 public Id classFromCourse(String courseName) {
     // code here
 
-List<apxio__Course__c>  course = [SELECT Id, Name FROM apxio__Course__c  WHERE Name = : courseName];
+List<apxio__Course__c>  courses = [SELECT Id, Name FROM apxio__Course__c  WHERE Name = : courseName];
 
-if(course == null){
+if(courses.isEmpty()){
     return null;
 }
    
@@ -11,7 +11,7 @@ if(course == null){
 
  apxio__Class__c  newRecord = new apxio__Class__c();
     newRecord.Name = courseName;
-    newRecord.apxio__Course__c = course[0].Id;
+    newRecord.apxio__Course__c = courses[0].Id;
 
      insert newRecord;
 
