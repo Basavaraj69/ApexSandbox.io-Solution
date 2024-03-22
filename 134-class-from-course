@@ -11,7 +11,7 @@ if(course == null){
 
  apxio__Class__c  newRecord = new apxio__Class__c();
     newRecord.Name = courseName;
-    newRecord.apxio__Course__c = course.Id;
+    newRecord.apxio__Course__c = course[0].Id;
 
      insert newRecord;
 
